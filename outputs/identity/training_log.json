@@ -1,0 +1,297 @@
+{
+    "Epoch#50": {
+        "Train": {
+            "loss": 0.37571071535348893,
+            "full sequence accuracy": 0.732,
+            "first n-symbol accuracy": 0.8817698412698413,
+            "overlap rate": 0.9238825396825394
+        },
+        "Eval": {
+            "loss": 0.591397899389267,
+            "full sequence accuracy": 0.6,
+            "first n-symbol accuracy": 0.8167960317460319,
+            "overlap rate": 0.8799095238095239
+        }
+    },
+    "Epoch#100": {
+        "Train": {
+            "loss": 0.003649375028908253,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.019252496492117643,
+            "full sequence accuracy": 0.982,
+            "first n-symbol accuracy": 0.9949944444444446,
+            "overlap rate": 0.9966611111111112
+        }
+    },
+    "Epoch#150": {
+        "Train": {
+            "loss": 0.0016604849370196462,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.028932337090373038,
+            "full sequence accuracy": 0.968,
+            "first n-symbol accuracy": 0.9903293650793652,
+            "overlap rate": 0.9937674603174603
+        }
+    },
+    "Epoch#200": {
+        "Train": {
+            "loss": 0.0010284304153174162,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.03656604066491127,
+            "full sequence accuracy": 0.966,
+            "first n-symbol accuracy": 0.9900849206349207,
+            "overlap rate": 0.9929095238095238
+        }
+    },
+    "Epoch#250": {
+        "Train": {
+            "loss": 0.0007339683943428099,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.0359050071798265,
+            "full sequence accuracy": 0.966,
+            "first n-symbol accuracy": 0.9900849206349207,
+            "overlap rate": 0.9931952380952381
+        }
+    },
+    "Epoch#300": {
+        "Train": {
+            "loss": 0.0005722419358789921,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.03105440721847117,
+            "full sequence accuracy": 0.9719999999999999,
+            "first n-symbol accuracy": 0.9927277777777779,
+            "overlap rate": 0.9952166666666666
+        }
+    },
+    "Epoch#350": {
+        "Train": {
+            "loss": 0.0004751688451506197,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.029627335467375816,
+            "full sequence accuracy": 0.9739999999999999,
+            "first n-symbol accuracy": 0.9937277777777778,
+            "overlap rate": 0.9956166666666668
+        }
+    },
+    "Epoch#400": {
+        "Train": {
+            "loss": 0.00041399368201382457,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.0277182542020455,
+            "full sequence accuracy": 0.9739999999999999,
+            "first n-symbol accuracy": 0.9939277777777779,
+            "overlap rate": 0.9956166666666666
+        }
+    },
+    "Epoch#450": {
+        "Train": {
+            "loss": 0.000374560960335657,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.025171733868774027,
+            "full sequence accuracy": 0.976,
+            "first n-symbol accuracy": 0.9946833333333334,
+            "overlap rate": 0.9959499999999999
+        }
+    },
+    "Epoch#500": {
+        "Train": {
+            "loss": 0.00034902693587355314,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.020913890172960237,
+            "full sequence accuracy": 0.978,
+            "first n-symbol accuracy": 0.9950833333333333,
+            "overlap rate": 0.99635
+        }
+    },
+    "Epoch#550": {
+        "Train": {
+            "loss": 0.00033258454059250655,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.016542489128187298,
+            "full sequence accuracy": 0.982,
+            "first n-symbol accuracy": 0.9957499999999999,
+            "overlap rate": 0.9967944444444445
+        }
+    },
+    "Epoch#600": {
+        "Train": {
+            "loss": 0.0003219989303033799,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.011495988332899287,
+            "full sequence accuracy": 0.982,
+            "first n-symbol accuracy": 0.9957499999999999,
+            "overlap rate": 0.9969944444444444
+        }
+    },
+    "Epoch#650": {
+        "Train": {
+            "loss": 0.0003149420022964478,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.00596315260627307,
+            "full sequence accuracy": 0.9879999999999999,
+            "first n-symbol accuracy": 0.9976888888888888,
+            "overlap rate": 0.9985333333333333
+        }
+    },
+    "Epoch#700": {
+        "Train": {
+            "loss": 0.0003097322362009436,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.0050224891281686725,
+            "full sequence accuracy": 0.99,
+            "first n-symbol accuracy": 0.9981333333333333,
+            "overlap rate": 0.9987555555555556
+        }
+    },
+    "Epoch#750": {
+        "Train": {
+            "loss": 0.00030524745234288274,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.004153965023579076,
+            "full sequence accuracy": 0.99,
+            "first n-symbol accuracy": 0.9981333333333333,
+            "overlap rate": 0.9987555555555556
+        }
+    },
+    "Epoch#800": {
+        "Train": {
+            "loss": 0.00030087645282037554,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.003299526573391631,
+            "full sequence accuracy": 0.9960000000000001,
+            "first n-symbol accuracy": 0.9989333333333332,
+            "overlap rate": 0.9993555555555556
+        }
+    },
+    "Epoch#850": {
+        "Train": {
+            "loss": 0.00029637827537953854,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.002469540439778939,
+            "full sequence accuracy": 0.9960000000000001,
+            "first n-symbol accuracy": 0.9989333333333332,
+            "overlap rate": 0.9993555555555556
+        }
+    },
+    "Epoch#900": {
+        "Train": {
+            "loss": 0.0002917740261182189,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.0017045801447238772,
+            "full sequence accuracy": 0.998,
+            "first n-symbol accuracy": 0.9993333333333332,
+            "overlap rate": 0.9997777777777778
+        }
+    },
+    "Epoch#950": {
+        "Train": {
+            "loss": 0.0002871656295610592,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.001086924789706245,
+            "full sequence accuracy": 0.998,
+            "first n-symbol accuracy": 0.9993333333333332,
+            "overlap rate": 0.9997777777777778
+        }
+    },
+    "Epoch#1000": {
+        "Train": {
+            "loss": 0.0002826605224981904,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.0006572148355189711,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        }
+    },
+    "Best eval accu": {
+        "Epoch Number": 1000,
+        "Train": {
+            "loss": 0.0002826605224981904,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        },
+        "Eval": {
+            "loss": 0.0006572148355189711,
+            "full sequence accuracy": 1.0,
+            "first n-symbol accuracy": 1.0,
+            "overlap rate": 1.0
+        }
+    }
+}

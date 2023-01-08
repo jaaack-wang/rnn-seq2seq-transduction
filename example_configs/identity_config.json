@@ -1,0 +1,42 @@
+{
+    "ModelConfig": {
+        "rnn_type": "SRNN",
+        "embd_dim": 32,
+        "hidden_size": 32,
+        "device": "cpu",
+        "num_layers": 1,
+        "dropout_rate": 0.0,
+        "use_attention": true,
+        "bidirectional": false,
+        "in_vocab_size": 29,
+        "out_vocab_size": 29,
+        "reduction_method": "sum"
+    },
+    "TrainConfig": {
+        "train_fp": "data/identity/train.txt",
+        "dev_fp": "data/identity/dev.txt",
+        "split": 0.3,
+        "vocab_fp": "data/identity/vocab.json",
+        "x_sep": null,
+        "y_sep": null,
+        "output_folder_name": "outputs",
+        "sub_folder_name": "identity",
+        "batch_size": 100,
+        "weight_decay": 1e-05,
+        "learning_rate": 0.005,
+        "acc_threshold": 0.0,
+        "print_eval_freq": 50,
+        "max_epoch_num": 1000,
+        "train_exit_acc": 1.0,
+        "eval_exit_acc": 1.0,
+        "teacher_forcing_ratio": 1.0,
+        "plot_training_log": true,
+        "show_plot": false
+    },
+    "InferConfig": {
+        "out_dir": "outputs/identity",
+        "infer_text_fp": "data/identity/test.txt",
+        "x_sep": null,
+        "y_sep": null
+    }
+}
