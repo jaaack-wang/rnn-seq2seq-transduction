@@ -87,7 +87,7 @@ def plot_performances_per_seq_len(perfs):
         first_n.append(perfs[f"Len-{l}"]["first n-symbol accuracy"])
         overlap.append(perfs[f"Len-{l}"]["overlap rate"])
     
-    plt.figure(figsize=(10,6))
+    plt.figure(figsize=(len(lengths) // 4, len(lengths) // 10))
     plt.plot(lengths, full_seq, ".-", label="full sequence accuracy")
     plt.plot(lengths, first_n,  ".-", label="first n-symbol accuracy")
     plt.plot(lengths, overlap,  ".-", label="overlap rate")

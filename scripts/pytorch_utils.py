@@ -9,6 +9,7 @@ import torch
 import torch.nn as nn
 import torch.nn.init as init
 from functools import partial
+import matplotlib.pyplot as plt
 
 import sys
 import pathlib
@@ -107,6 +108,30 @@ def metrics(Y, Ypred):
     first_n_accu = pairwise_overlap.mean().item()
     
     return full_seq_accu, first_n_accu, overlap_rate
+
+
+def _get_results(dic):
+    loss = dic["loss"]
+    overlap_rate = dic["overlap rate"]
+    full_seq_acc = dic["full sequence accuracy"]
+    first_n_acc = dic["first n-symbol accuracy"]
+    return [loss, full_seq_acc, first_n_acc, overlap_rate]
+
+
+def get_results(log, train_log=True):
+    '''Return the results of the four metrics: loss, 
+    full sequence accuracy, first n-symbol accuracy, 
+    overlap rate, given a result dictionary.'''
+    
+    if train_log:
+        best = log["Best eval accu"]
+        best_train = best["Train"]
+        best_dev = best["Eval"]
+        train_res = _get_results(best_train)
+        dev_res = _get_results(best_dev)
+        return train_res, dev_res
+    
+    return _get_results(log)
 
 
 def evaluate(model, dataloader, criterion, 
@@ -274,7 +299,8 @@ def predict(text, model, in_seq_encoder, out_seq_decoder,
         
         for t in text:
             o, w = predict(t, model, in_seq_encoder, 
-                           out_seq_decoder, visualize=False)
+                           out_seq_decoder, visualize=False, 
+                           max_output_len=max_output_len)
             output_seqs.append(o)
             attn_weights.append(w)
 
@@ -284,11 +310,12 @@ def predict(text, model, in_seq_encoder, out_seq_decoder,
         raise TypeError("texts must be a str or a list of strs," \
                         f" {type(text)} was given.")
     
+    device = model.device
     in_seq = in_seq_encoder(text)
-    in_seq_tensor = torch.Tensor(in_seq).long().unsqueeze(1)
+    in_seq_tensor = torch.Tensor(in_seq).long().unsqueeze(1).to(device)
 
     model.eval()
-    y = torch.Tensor([[0]]).long()
+    y = torch.Tensor([[0]]).long().to(device)
     outputs, attn_ws = [], []
     encoder_outputs, hidden, cell  = model.encoder(in_seq_tensor)
     
@@ -301,8 +328,15 @@ def predict(text, model, in_seq_encoder, out_seq_decoder,
         y = output.argmax(1).unsqueeze(0)
         outputs.append(y.item()); attn_ws.append(attn_w)
     
-    attn_ws = torch.cat(attn_ws)
-    attn_ws = attn_ws.squeeze(1).detach().numpy()
+    if attn_ws[0] != None:
+        attn_ws = torch.cat(attn_ws).squeeze(1)
+
+        if device.type != "cpu":
+            attn_ws = attn_ws.cpu().detach().numpy()
+        else:
+            attn_ws = attn_ws.detach().numpy()
+    else:
+        visualize = False
     
     output_seq = out_seq_decoder(outputs)
     
@@ -346,4 +380,3 @@ def customize_predictor(model, in_seq_encoder, out_seq_decoder,
                    visualize=visualize, 
                    show_plot=show_plot, 
                    saved_plot_fp=saved_plot_fp)
-
